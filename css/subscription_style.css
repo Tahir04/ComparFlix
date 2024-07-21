@@ -1,0 +1,2347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+}
+
+@media screen and (max-width:796px){
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 16px;
+        align-items: center;
+        /* padding: 30px 162px; */
+        /* position: absolute; */
+        width: 100%;
+        backdrop-filter: blur(6px);
+        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+        z-index: 1;
+        /* position: fixed; */
+        margin-bottom: 80px;
+    }
+    header .nav-items{
+        display: none;
+    }
+    header .buttons{
+        display: none;
+    }
+    header .menu{
+        display: block;
+    }
+    header .logo{
+        color: #FFF;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        /* box-shadow: 0px 0px 2px 1px #dedede; */
+        /* padding: 3px 4px; */
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+    header button{
+        padding: 16px;
+        background-color: #1a1a1a;
+        color: #FFF;
+        border: none;
+        font-size: 18px;
+    }
+    .choose_plan{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+    .choose_plan .plan_info .plan_text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .choose_plan .plan_info .plan_text h1{
+        color: var(--Absolute-White, #FFF);
+        width: 100%;
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+        margin-bottom: 2%;
+    }
+    .choose_plan .plan_info .plan_text p{
+        width: 100%;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 175px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs .right{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .choose_plan .plan_info .plan_tabs .left{
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .choose_plan .plan_cards .card{
+        width: 100%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        margin-bottom: 8%;
+    }
+    .choose_plan .plan_cards .card h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+        margin-bottom: 2%;
+    }
+    .choose_plan .plan_cards .card p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards .card span{
+        width: 125px;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        margin: 10% 0;
+    }
+    .choose_plan .plan_cards .card span .dollar{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%; /* 29.2px */
+    }
+    .choose_plan .plan_cards .card span .mnt{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73%; /* 13.14px */
+    }
+    .choose_plan .plan_cards .card .buttons{
+        display: flex;
+        /* width: 80%; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card .buttons .black_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        cursor: pointer;
+    }
+    .choose_plan .plan_cards .card .buttons .red_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .compare_plan{
+        width: 80%;
+        margin:150px 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .compare_plan .cpr_plan_info{
+        width: 98%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .compare_plan .cpr_plan_info h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+        margin-bottom: 2%;
+        width: 95%;
+    }
+    .compare_plan .cpr_plan_info p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        width: 100%;
+    }
+    .compare_plan .cpr_plan_list{
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .compare_plan .cpr_plan_list .plan_type{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin: 20px 0 25px 0;
+    }
+    .compare_plan .cpr_plan_list .plan_type a{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .compare_plan .cpr_plan_list .plan_type a:nth-child(2){
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .compare_plan .cpr_plan_list .type_infos{
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 100%;
+        height: 480px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info{
+        width: 100%;
+        display: flex;
+        gap: 30%;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block{
+        width: 48%;
+        height: auto;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block h1{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+        width: 100%;
+        /* background-color: red; */
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block p{
+        color: var(--Grey-95, #F1F1F3);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone{
+        width: 85%;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone h1{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */   
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone p{
+        color: var(--Grey-95, #F1F1F3);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+    }
+    .compare_plan .cpr_plan_table{
+        display: none;
+    }
+    .fade_out{
+        width: 80%;
+        height: 320px;
+        position: relative;
+        background-image:url(../image/marvel.jpg);
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 100px auto 100px auto;
+    }
+    .fade_out .fade_grad{
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        background: linear-gradient(180deg, #0F0F0F 0.18%, rgba(20, 15, 15, 0.97) 29.35%, rgba(34, 14, 14, 0.91) 58.53%, rgba(229, 0, 0, 0.00) 87.7%);
+    }
+    .fade_out .fade_grad .fade_info{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .fade_out .fade_grad .fade_info .text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fade_out .fade_grad .fade_info .text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 72px */
+        margin-bottom: 2%;
+    }
+    .fade_out .fade_grad .fade_info .text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .fade_out .fade_grad .fade_info button{
+        display: flex;
+        width: 170px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .footer{
+        width: 100%;
+        height: 550px;
+        background: var(--Black-06, #0F0F0F);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer .footer_info{
+        background: var(--Black-06, #0F0F0F);
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer .footer_info ul{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        list-style-type: none;
+        width: 48%;
+        margin-bottom: 5%;
+    }
+    .footer .footer_info ul li a{
+        text-decoration: none;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_info .container{
+        width: 48%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_info .container span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        margin-bottom: 8%;
+    }
+    .footer .footer_info .container .logo{
+        width: auto;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_info .container .logo a{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        padding: 7px;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+    .footer .footer_end{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer_end .line{
+        width: 100%;
+        height: 2px;
+        background: #262626;
+        margin-bottom: 4%;
+    }
+    .footer .footer_end .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer_end .text .footer_text_left{
+        width: 100%;
+        justify-content: start;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        margin-bottom: 12px;
+    }
+    .footer .footer_end .text .footer_text_right{
+        width: 100%;
+        justify-content: start;
+        margin-left: 5px;
+        gap: 5%;
+        display: flex;
+    }
+    .footer .footer_end .text .footer_text_right a{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .footer .footer_end .text .footer_text_right .a_line{
+        width: 2px;
+        height: 27px;
+        background: #262626;
+    }
+    
+    header .nav-items ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info .container .logo a:hover{
+        background: #E50000;
+    }
+    .footer .footer_end .text .footer_text_right a:hover{
+        color: #E50000;
+    }
+}
+
+@media screen and (min-width:796px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0;
+        /* position: absolute; */
+        /* position: fixed; */
+        width: 100%;
+        backdrop-filter: blur(6px);
+        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+        z-index: 1;
+        margin-bottom: 80px;
+    }    
+    header .menu{
+        display: none;
+    }
+    header .buttons{
+        display: block;
+    }
+    header .buttons button{
+        background-color: transparent;
+        cursor: pointer;
+        color: #FFF;
+        border: none;
+        font-size: 17px;
+        margin-right: 12px;
+    }
+    header .nav-items{
+        width: 420px;
+        height: 72px;
+        border-radius: 12px;
+        border: 4px solid #1F1F1F;
+        background: #0F0F0F;
+        display: flex;
+    }
+    header .logo{
+        color: #FFF;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        /* box-shadow: 0px 0px 2px 1px #dedede; */
+        /* padding: 3px 4px; */
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+    header .nav-items ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    header .nav-items ul li{
+        list-style: none;
+        margin-left: 25px;
+        /* padding: 0 10px; */
+    }
+    header .nav-items ul li a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    header .nav-items ul li:nth-child(4){
+        border-radius: 8px;
+        border: 1px solid var(--black-10, #1A1A1A);
+        background: var(--black-10, #1A1A1A);
+        padding: 10px 12px;
+    }
+    .choose_plan{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .choose_plan .plan_info .plan_text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .choose_plan .plan_info .plan_text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 148%; /* 57px */
+        width: 95%;
+    }
+    .choose_plan .plan_info .plan_text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 185px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs .right{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .choose_plan .plan_info .plan_tabs .left{
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .choose_plan .plan_cards .card{
+        width: 48%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        margin-bottom: 5%;
+    }
+    .choose_plan .plan_cards .card h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+        margin-bottom: 2%;
+    }
+    .choose_plan .plan_cards .card p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards .card span{
+        width: 125px;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        margin: 10% 0;
+    }
+    .choose_plan .plan_cards .card span .dollar{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%; /* 29.2px */
+    }
+    .choose_plan .plan_cards .card span .mnt{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73%; /* 13.14px */
+    }
+    .choose_plan .plan_cards .card .buttons{
+        display: flex;
+        /* width: 80%; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card .buttons .black_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 13px;
+        width: 47%;
+        height: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        cursor: pointer;
+    }
+    .choose_plan .plan_cards .card .buttons .red_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        width: 47%;
+        height: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .fade_out{
+        width: 80%;
+        height: 320px;
+        position: relative;
+        background-image:url(../image/marvel.jpg);
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 100px auto 100px auto;
+    }
+    .fade_out .fade_grad{
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        background: linear-gradient(180deg, #0F0F0F 0.18%, rgba(20, 15, 15, 0.97) 29.35%, rgba(34, 14, 14, 0.91) 58.53%, rgba(229, 0, 0, 0.00) 87.7%);
+    }
+    .fade_out .fade_grad .fade_info{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .fade_out .fade_grad .fade_info .text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fade_out .fade_grad .fade_info .text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 72px */
+        margin-bottom: 2%;
+    }
+    .fade_out .fade_grad .fade_info .text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .fade_out .fade_grad .fade_info button{
+        display: flex;
+        width: 170px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .compare_plan{
+        width: 80%;
+        margin:150px 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .compare_plan .cpr_plan_info{
+        width: 98%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .compare_plan .cpr_plan_info h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+        margin-bottom: 2%;
+        width: 95%;
+    }
+    .compare_plan .cpr_plan_info p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        width: 100%;
+    }
+    .compare_plan .cpr_plan_list{
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .compare_plan .cpr_plan_list .plan_type{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        margin: 20px 0 25px 0;
+    }
+    .compare_plan .cpr_plan_list .plan_type a{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .compare_plan .cpr_plan_list .plan_type a:nth-child(2){
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .compare_plan .cpr_plan_list .type_infos{
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 100%;
+        height: 480px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info{
+        width: 100%;
+        display: flex;
+        gap: 30%;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block{
+        width: 48%;
+        height: auto;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block h1{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+        width: 100%;
+        /* background-color: red; */
+    }
+    .compare_plan .cpr_plan_list .type_infos .info .info_block p{
+        color: var(--Grey-95, #F1F1F3);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone{
+        width: 85%;
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone h1{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */   
+    }
+    .compare_plan .cpr_plan_list .type_infos .info_lone p{
+        color: var(--Grey-95, #F1F1F3);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+    }
+    .compare_plan .cpr_plan_table{
+        display: none;
+    }
+    .fade_out{
+        width: 80%;
+        height: 320px;
+        position: relative;
+        background-image:url(../image/marvel.jpg);
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 100px auto 100px auto;
+    }
+    .fade_out .fade_grad{
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        background: linear-gradient(180deg, #0F0F0F 0.18%, rgba(20, 15, 15, 0.97) 29.35%, rgba(34, 14, 14, 0.91) 58.53%, rgba(229, 0, 0, 0.00) 87.7%);
+    }
+    .fade_out .fade_grad .fade_info{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .fade_out .fade_grad .fade_info .text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fade_out .fade_grad .fade_info .text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 72px */
+        margin-bottom: 2%;
+    }
+    .fade_out .fade_grad .fade_info .text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .fade_out .fade_grad .fade_info button{
+        display: flex;
+        width: 170px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .footer{
+        width: 100%;
+        height: 500px;
+        background: var(--Black-06, #0F0F0F);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer .footer_info{
+        background: var(--Black-06, #0F0F0F);
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer .footer_info ul{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        list-style-type: none;
+        width: 32%;
+        margin-bottom: 5%;
+    }
+    .footer .footer_info ul li a{
+        text-decoration: none;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_info .container{
+        width: 32%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_info .container span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        margin-bottom: 8%;
+    }
+    .footer .footer_info .container .logo{
+        width: auto;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_info .container .logo a{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        padding: 7px;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+    .footer .footer_end{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer_end .line{
+        width: 100%;
+        height: 2px;
+        background: #262626;
+        margin-bottom: 2%;
+    }
+    .footer .footer_end .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer .footer_end .text .footer_text_left{
+        width: 45%;
+        justify-content: start;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_end .text .footer_text_right{
+        width: 45%;
+        justify-content: end;
+        gap: 5%;
+        display: flex;
+    }
+    .footer .footer_end .text .footer_text_right a{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .footer .footer_end .text .footer_text_right .a_line{
+        width: 2px;
+        height: 27px;
+        background: #262626;
+    }
+    
+    header .nav-items ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info .container .logo a:hover{
+        background: #E50000;
+    }
+    .footer .footer_end .text .footer_text_right a:hover{
+        color: #E50000;
+    }
+}
+
+@media screen and (min-width:1280px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0;
+        /* position: absolute; */
+        /* position: fixed; */
+        width: 100%;
+        backdrop-filter: blur(6px);
+        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+        z-index: 1;
+        margin-bottom: 100px;
+    }    
+    header .menu{
+        display: none;
+    }
+    header .buttons{
+        display: block;
+    }
+    header .buttons button{
+        background-color: transparent;
+        cursor: pointer;
+        color: #FFF;
+        border: none;
+        font-size: 22px;
+        margin-right: 12px;
+    }
+    header .nav-items{
+        width: 550px;
+        height: 72px;
+        border-radius: 12px;
+        border: 4px solid #1F1F1F;
+        background: #0F0F0F;
+        display: flex;
+    }
+    header .logo{
+        color: #FFF;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        /* box-shadow: 0px 0px 2px 1px #dedede; */
+        /* padding: 3px 4px; */
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+    header .nav-items ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    header .nav-items ul li{
+        list-style: none;
+        margin-left: 28px;
+        padding: 0 10px;
+    }
+    header .nav-items ul li a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    header .nav-items ul li:nth-child(4){
+        border-radius: 8px;
+        border: 1px solid var(--black-10, #1A1A1A);
+        background: var(--black-10, #1A1A1A);
+        padding: 10px 12px;
+    }
+    .choose_plan{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .choose_plan .plan_info .plan_text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info .plan_text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+    }
+    .choose_plan .plan_info .plan_text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 185px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs .right{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .choose_plan .plan_info .plan_tabs .left{
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card{
+        width: 32%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+    .choose_plan .plan_cards .card h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+        margin-bottom: 2%;
+    }
+    .choose_plan .plan_cards .card p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards .card span{
+        width: 125px;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        margin: 10% 0;
+    }
+    .choose_plan .plan_cards .card span .dollar{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%; /* 29.2px */
+    }
+    .choose_plan .plan_cards .card span .mnt{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73%; /* 13.14px */
+    }
+    .choose_plan .plan_cards .card .buttons{
+        display: flex;
+        /* width: 80%; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card .buttons .black_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        cursor: pointer;
+    }
+    .choose_plan .plan_cards .card .buttons .red_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .compare_plan{
+        width: 80%;
+        margin:100px 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .compare_plan .cpr_plan_info{
+        width: 98%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .compare_plan .cpr_plan_info h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+    }
+    .compare_plan .cpr_plan_info p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        width: 75%;
+    }
+    .compare_plan .cpr_plan_list{
+        display: none;
+    }
+    .compare_plan .cpr_plan_table{
+        display: block;
+        width: 100%;
+    }
+    .compare_plan .cpr_plan_table table{
+        border: 1px solid #99999999;
+        border-collapse: collapse;
+    }
+    .compare_plan .cpr_plan_table table tr th{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        background-color: #0b0b0b;
+        width: 25%;
+        text-align: left;
+        padding-left: 20px;
+        border: 1px solid #99999999;
+    }
+    .compare_plan .cpr_plan_table table tr .three{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        background-color: #0b0b0b;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .compare_plan .cpr_plan_table table tr .three span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+        border-radius: 2px;
+        background: var(--Red-45, #E50000);
+        display: flex;
+        padding: 1px 10px;
+        margin-left: 8px;
+        align-items: center;
+    }
+    .compare_plan .cpr_plan_table table tr td{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        padding: 20px 20px 20px 20px;
+        border: 1px solid #99999999;
+    }
+    .compare_plan .cpr_plan_list{
+        display: none;
+    }   
+     .fade_out{
+        width: 80%;
+        height: 280px;
+        position: relative;
+        background-image:url(../image/marvel.jpg);
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 130px auto 100px auto;
+    }
+    .fade_out .fade_grad{
+        width: 100%;
+        height: 280px;
+        position: absolute;
+        background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
+    }
+    .fade_out .fade_grad .fade_info{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin:auto;
+    }
+    .fade_out .fade_grad .fade_info .text{
+        width: 90%;
+        height: auto;
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+    }
+    .fade_out .fade_grad .fade_info .text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 72px */
+        margin-bottom: 2%;
+    }
+    .fade_out .fade_grad .fade_info .text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .fade_out .fade_grad .fade_info button{
+        display: flex;
+        width: 14%;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .footer{
+        width: 100%;
+        height: 450px;
+        background: var(--Black-06, #0F0F0F);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer .footer_info{
+        background: var(--Black-06, #0F0F0F);
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .footer .footer_info ul{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        list-style-type: none;
+        width: 15%;
+    }
+    .footer .footer_info ul li a{
+        text-decoration: none;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_info .container{
+        width: 15%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_info .container span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        margin-bottom: 20%;
+    }
+    .footer .footer_info .container .logo{
+        width: auto;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_info .container .logo a{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        padding: 8px;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+    .footer .footer_end{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer_end .line{
+        width: 100%;
+        height: 2px;
+        background: #262626;
+        margin-bottom: 2%;
+    }
+    .footer .footer_end .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer .footer_end .text .footer_text_left{
+        width: 45%;
+        justify-content: start;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_end .text .footer_text_right{
+        width: 45%;
+        justify-content: end;
+        gap: 5%;
+        display: flex;
+    }
+    .footer .footer_end .text .footer_text_right a{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .footer .footer_end .text .footer_text_right .a_line{
+        width: 2px;
+        height: 27px;
+        background: #262626;
+    }
+
+    
+    header .nav-items ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info .container .logo a:hover{
+        background: #E50000;
+    }
+    .footer .footer_end .text .footer_text_right a:hover{
+        color: #E50000;
+    }
+}
+
+@media screen and (min-width:1440px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0;
+        /* position: absolute; */
+        /* position: fixed; */
+        width: 100%;
+        backdrop-filter: blur(6px);
+        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
+        z-index: 1;
+        margin-bottom: 100px;
+    }    
+    header .menu{
+        display: none;
+    }
+    header .buttons{
+        display: block;
+    }
+    header .buttons button{
+        background-color: transparent;
+        cursor: pointer;
+        color: #FFF;
+        border: none;
+        font-size: 22px;
+        margin-right: 12px;
+    }
+    header .nav-items{
+        width: 550px;
+        height: 72px;
+        border-radius: 12px;
+        border: 4px solid #1F1F1F;
+        background: #0F0F0F;
+        display: flex;
+    }
+    header .logo{
+        color: #FFF;
+        font-weight: bold;
+        font-size: 26px;
+        letter-spacing: 5px;
+        line-height: 30px;
+        /* box-shadow: 0px 0px 2px 1px #dedede; */
+        /* padding: 3px 4px; */
+        font-family: Pacifico;
+        text-decoration: none;
+    }
+    header .nav-items ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    header .nav-items ul li{
+        list-style: none;
+        margin-left: 28px;
+        padding: 0 10px;
+    }
+    header .nav-items ul li a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    header .nav-items ul li:nth-child(4){
+        border-radius: 8px;
+        border: 1px solid var(--black-10, #1A1A1A);
+        background: var(--black-10, #1A1A1A);
+        padding: 10px 12px;
+    }
+    .choose_plan{
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .choose_plan .plan_info .plan_text{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .choose_plan .plan_info .plan_text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+        /* margin-bottom: 1%; */
+    }
+    .choose_plan .plan_info .plan_text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs{
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-06, #0F0F0F);
+        width: 185px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_info .plan_tabs .right{
+        border-radius: 10px;
+        background:none;
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .choose_plan .plan_info .plan_tabs .left{
+        text-decoration: none;
+        border-radius: 10px;
+        background: var(--Black-12, #1F1F1F);
+        display: flex;
+        padding: 10px 17px;
+        justify-content: center;
+        align-items: center;
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card{
+        width: 32%;
+        /* height: 350px; */
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        border-radius: 12px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+    }
+    .choose_plan .plan_cards .card h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 36px */
+        margin-bottom: 2%;
+    }
+    .choose_plan .plan_cards .card p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .choose_plan .plan_cards .card span{
+        width: 125px;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        margin: 10% 0;
+    }
+    .choose_plan .plan_cards .card span .dollar{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 73%; /* 29.2px */
+    }
+    .choose_plan .plan_cards .card span .mnt{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73%; /* 13.14px */
+    }
+    .choose_plan .plan_cards .card .buttons{
+        display: flex;
+        /* width: 80%; */
+        align-items: center;
+        justify-content: space-between;
+    }
+    .choose_plan .plan_cards .card .buttons .black_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-08, #141414);
+        cursor: pointer;
+    }
+    .choose_plan .plan_cards .card .buttons .red_btn{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        width: 47%;
+        height: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        display: flex;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .compare_plan{
+        width: 80%;
+        margin:120px 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .compare_plan .cpr_plan_info{
+        width: 98%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .compare_plan .cpr_plan_info h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 57px */
+    }
+    .compare_plan .cpr_plan_info p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        width: 75%;
+    }
+    .compare_plan .cpr_plan_list{
+        display: none;
+    }
+    .compare_plan .cpr_plan_table{
+        display: block;
+        width: 100%;
+    }
+    .compare_plan .cpr_plan_table table{
+        border: 1px solid #99999999;
+        border-collapse: collapse;
+    }
+    .compare_plan .cpr_plan_table table tr th{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        background-color: #0b0b0b;
+        width: 25%;
+        text-align: left;
+        padding-left: 30px;
+        border: 1px solid #99999999;
+    }
+    .compare_plan .cpr_plan_table table tr .three{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        background-color: #0b0b0b;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .compare_plan .cpr_plan_table table tr .three span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 21px */
+        border-radius: 2px;
+        background: var(--Red-45, #E50000);
+        display: flex;
+        padding: 1px 10px;
+        margin-left: 8px;
+        align-items: center;
+    }
+    .compare_plan .cpr_plan_table table tr td{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        padding: 20px 30px 20px 30px;
+        border: 1px solid #99999999;
+    }
+    .compare_plan .cpr_plan_list{
+        display: none;
+    }
+    .fade_out{
+        width: 80%;
+        height: 280px;
+        position: relative;
+        background-image:url(../image/marvel.jpg);
+        border: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 130px auto 100px auto;
+    }
+    .fade_out .fade_grad{
+        width: 100%;
+        height: 280px;
+        position: absolute;
+        background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
+    }
+    .fade_out .fade_grad .fade_info{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin:auto;
+    }
+    .fade_out .fade_grad .fade_info .text{
+        width: 90%;
+        height: auto;
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+    }
+    .fade_out .fade_grad .fade_info .text h1{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 72px */
+        margin-bottom: 2%;
+    }
+    .fade_out .fade_grad .fade_info .text p{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .fade_out .fade_grad .fade_info button{
+        display: flex;
+        width: 14%;
+        height: 52px;
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--Red-45, #E50000);
+        cursor: pointer;
+    }
+    .footer{
+        width: 100%;
+        height: 450px;
+        background: var(--Black-06, #0F0F0F);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer .footer_info{
+        background: var(--Black-06, #0F0F0F);
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .footer_info ul{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        list-style-type: none;
+    }
+    .footer .footer_info ul li a{
+        text-decoration: none;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_info .container{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .footer_info .container span{
+        color: var(--Absolute-White, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 30px */
+        margin-bottom: 20%;
+    }
+    .footer .footer_info .container .logo{
+        width: auto;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .footer .footer_info .container .logo a{
+        border-radius: 8px;
+        border: 1px solid var(--Black-15, #262626);
+        background: var(--Black-10, #1A1A1A);
+        padding: 8px;
+        margin-right: 10%;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+    .footer .footer_end{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer_end .line{
+        width: 100%;
+        height: 2px;
+        background: #262626;
+        margin-bottom: 2%;
+    }
+    .footer .footer_end .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer .footer_end .text .footer_text_left{
+        width: 45%;
+        justify-content: start;
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+    }
+    .footer .footer_end .text .footer_text_right{
+        width: 45%;
+        justify-content: end;
+        gap: 5%;
+        display: flex;
+    }
+    .footer .footer_end .text .footer_text_right a{
+        color: var(--Grey-60, #999);
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+        text-decoration: none;
+    }
+    .footer .footer_end .text .footer_text_right .a_line{
+        width: 2px;
+        height: 27px;
+        background: #262626;
+    }
+
+    header .nav-items ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info ul li a:hover{
+        color: #fe0202;
+    }
+    .footer .footer_info .container .logo a:hover{
+        background: #E50000;
+    }
+    .footer .footer_end .text .footer_text_right a:hover{
+        color: #E50000;
+    }
+}
