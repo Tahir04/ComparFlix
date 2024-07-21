@@ -32,8 +32,9 @@ ComparFlix is a modern and responsive web application designed for streaming mov
 
 If you have any questions or need further information, feel free to reach out via [Tahir04](https://github.com/Tahir04).
 
+
 ---
 
-Thank you for checking out ComparFlix! Your interest and feedback are greatly appreciated.
+Thank you for checking out ComparFlix!
 
 
